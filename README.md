@@ -23,7 +23,8 @@ merging branches.
 
 ## Add, Commit, and Push changes
 **Before adding any changes, please double check you are on your feature branch!** \
-**Follow this sequence of orders add, commit, push** \
+**Follow this sequence in order -> add, commit, push** \
+\
 *Add* - You must use this command to add all or specific files to the remote repo \
 'git add .' - add everything that has changed \
 'git add <specific_file_name>' - add only selected item(s) \
