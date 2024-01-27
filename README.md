@@ -16,17 +16,17 @@ merging branches.
 'git branch'
 
 *Create a new branch* \
-'git branch <<new branch name>>'
+'git branch <new_branch_name>'
 
 *Move to new branch* \
-'git checkout <branch name>'
+'git checkout <branch_name>'
 
 ## Add, Commit, and Push changes
 **Before adding any changes, please double check you are on your feature branch!** \
 **Follow this sequence of orders add, commit, push** \
 *Add* - You must use this command to add all or specific files to the remote repo \
 'git add .' - add everything that has changed \
-'git add <specific file name>' - add only selected item(s) \
+'git add <specific_file_name>' - add only selected item(s) \
 
 *Commit* - Attaches a message of what was completed/errors/bugs/notes/etc. also mandatory \
 'git commit -m "message you want"' \
