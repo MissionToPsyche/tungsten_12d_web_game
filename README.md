@@ -16,7 +16,7 @@ merging branches.
 'git branch'
 
 *Create a new branch* \
-'git branch <new branch name>'
+'git branch <<new branch name>>'
 
 *Move to new branch* \
 'git checkout <branch name>'
