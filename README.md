@@ -12,3 +12,8 @@ a broken local repo. Instead, when tasked with creating a new feature/user story
 merging branches. 
 
 ## Creating a new branch
+*Check out the current branch you are working on* \
+'git branch'
+
+*Create a new branch* \
+'git branch <new branch name>'
