@@ -1,7 +1,9 @@
 ## Install GitHub LFS tools before cloning the repository
 
-*Install on Mac*
-'brew install git-lfs'
+*Install on Mac* \
+'brew install git-lfs' \
+*Once you have lfs installed, git install the tool* \
+'git install lfs'
 
 ## Cloning the Repo
 'git clone SSH'
