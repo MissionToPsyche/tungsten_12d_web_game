@@ -2,6 +2,7 @@
 
 *Install on Mac* \
 'brew install git-lfs' \
+\
 *Once you have lfs installed, git install the tool* \
 'git install lfs'
 
