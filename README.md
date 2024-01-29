@@ -7,7 +7,9 @@
 'git lfs install'
 
 ## Cloning the Repo
-'git clone SSH'
+'git clone SSH' \
+\
+*You may need to run:* 'git lfs pull' *to ensure the lfs files are downloaded and classified in local*
 
 ## Don't push anything to the Main/Master Branch
 This serves as our standard version to be released once the project is completed. We also want to make sure if anything breaks we have a working version that can be used to rebase
