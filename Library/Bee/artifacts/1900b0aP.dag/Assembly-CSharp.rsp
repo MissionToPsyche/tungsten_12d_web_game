@@ -322,6 +322,7 @@
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Menu.cs"
+"Assets/Scripts/OpenWebsite.cs"
 "Assets/Scripts/Scroller.cs"
 "Assets/Scripts/VolumeSettings.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

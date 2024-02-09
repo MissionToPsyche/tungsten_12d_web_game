@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AudioManager
     - MainMenu
     - Menu
+    - OpenWebsite
     - Scroller
     - VolumeSettings
     Unity.2D.Animation.Editor.dll:
@@ -110,6 +111,9 @@ ScriptsOnlyBuild:
     fullTypeName: VolumeSettings
     methodName: high
   - assembly: Assembly-CSharp
+    fullTypeName: OpenWebsite
+    methodName: Open
+  - assembly: Assembly-CSharp
     fullTypeName: VolumeSettings
     methodName: low
   - assembly: Assembly-CSharp
@@ -208,6 +212,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7380}
     - Class: 114
       Script: {instanceID: 7616}
+    - Class: 114
+      Script: {instanceID: 28000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1500,6 +1506,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 22916fdfa282dade3ab3901d0edcf885
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OpenWebsite
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
