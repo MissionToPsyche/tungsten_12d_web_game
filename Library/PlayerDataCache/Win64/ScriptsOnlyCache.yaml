@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AudioManager
     - MainMenu
     - Menu
+    - Scroller
     - VolumeSettings
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -54,6 +55,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Slider
   serializedClasses:
     Unity.TextMeshPro:
@@ -98,9 +100,30 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu
     methodName: quitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: VolumeSettings
+    methodName: high
+  - assembly: Assembly-CSharp
+    fullTypeName: VolumeSettings
+    methodName: low
+  - assembly: Assembly-CSharp
+    fullTypeName: VolumeSettings
+    methodName: med
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -154,6 +177,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2360}
     - Class: 114
+      Script: {instanceID: 2530}
+    - Class: 114
       Script: {instanceID: 2906}
     - Class: 114
       Script: {instanceID: 3170}
@@ -172,15 +197,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6056}
     - Class: 114
-      Script: {instanceID: 6756}
+      Script: {instanceID: 6646}
     - Class: 114
-      Script: {instanceID: 6970}
+      Script: {instanceID: 6668}
     - Class: 114
-      Script: {instanceID: 7376}
+      Script: {instanceID: 6760}
     - Class: 114
-      Script: {instanceID: 26562}
+      Script: {instanceID: 6974}
     - Class: 114
-      Script: {instanceID: 28862}
+      Script: {instanceID: 7380}
+    - Class: 114
+      Script: {instanceID: 7616}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -233,11 +260,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6056}
     - Class: 114
-      Script: {instanceID: 6756}
+      Script: {instanceID: 6760}
     - Class: 114
-      Script: {instanceID: 6970}
+      Script: {instanceID: 6974}
     - Class: 114
-      Script: {instanceID: 7376}
+      Script: {instanceID: 7380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1031,10 +1058,22 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 65ed5061f34fe940bcef1056b4a608df
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VolumeSettings
+  - hash:
+      serializedVersion: 2
       Hash: 35e0b31791c377513b6fc7b9568c50cd
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: Benchmark02
+  - hash:
+      serializedVersion: 2
+      Hash: 4fc3c225d378e2929cffa8ecf8e24ba8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Scroller
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -1125,6 +1164,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: UnityEngine.U2D
     className: SpriteShapeController
+  - hash:
+      serializedVersion: 2
+      Hash: 569cdf41ae8de8c1fb22d3a15a9653b9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
   - hash:
       serializedVersion: 2
       Hash: 8bbce9932f67ad8e7f4eefec87800f94
@@ -1455,18 +1500,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 569cdf41ae8de8c1fb22d3a15a9653b9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
-      Hash: 65ed5061f34fe940bcef1056b4a608df
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VolumeSettings
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
