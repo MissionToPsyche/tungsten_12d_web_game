@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/MainMenu.unity
-=======
-- path: Assets/Scenes/CongradulationPage.unity
->>>>>>> origin/mission-to-psyche-branch
   isLoaded: 1
   isActive: 1
   isSubScene: 0

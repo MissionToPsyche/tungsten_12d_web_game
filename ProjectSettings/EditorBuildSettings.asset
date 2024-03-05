@@ -4,20 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 03f6a236f0eb96049bedda6d2490c20e
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-<<<<<<< HEAD
-=======
-  - enabled: 1
-    path: Assets/Scenes/LevelUp.unity
-    guid: 0959c4b0699bd474a834cf5379b32073
-  - enabled: 1
-    path: Assets/Scenes/CongradulationPage.unity
-    guid: bebe3c871f21c4c1b9a4d744ad14e818
->>>>>>> origin/mission-to-psyche-branch
+  m_Scenes: []
   m_configObjects: {}
