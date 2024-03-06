@@ -374,6 +374,7 @@
 "Assets/again.cs"
 "Assets/Circle.cs"
 "Assets/ContinueJourney.cs"
+"Assets/CoreGameScripts/AsteroidSpawner.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Menu.cs"
