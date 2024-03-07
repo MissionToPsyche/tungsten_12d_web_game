@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{3F2B13A0-527B-5B76-CE3F-96852B232DD7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioManager.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoreGameScripts/AsteroidSpawner.cs">
     <Files>
-      <File FileName="Assets/Scripts/AudioManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/OpenWebsite.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Scroller.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/VolumeSettings.cs" Line="1" Column="1" />
+      <File FileName="Assets/CoreGameScripts/AsteroidSpawner.cs" Line="63" Column="154" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Alloy-Explorer">
             <Node name="Assets" expanded="True">
-              <Node name="Scenes" expanded="True" selected="True" />
+              <Node name="CoreGameScripts" expanded="True" />
+              <Node name="Scenes" expanded="True" />
               <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
@@ -21,11 +22,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="03322f78-b4e2-402b-9d2d-4215fa6aea80" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="05a8077c-3dce-4cb3-abf8-51a1d1a9129e" />
 </Properties>

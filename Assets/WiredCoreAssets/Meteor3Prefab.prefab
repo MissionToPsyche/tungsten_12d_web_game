@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 68918505487953613}
   - component: {fileID: 4353743182162161142}
   - component: {fileID: 5663027171177495340}
+  - component: {fileID: 9036047670841814475}
   m_Layer: 0
   m_Name: Meteor3Prefab
   m_TagString: Untagged
@@ -148,3 +149,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9036047670841814475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933512033755112034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206ba7ee78736485fa6f33797bac4164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroid: {fileID: 0}
+  x_drift: 0
+  y_drift: 1
+  rotation: 0
