@@ -87,9 +87,9 @@ public class AsteroidSpawner : MonoBehaviour
     private AsteroidObject asteroid18;
 
     // SerializeFields for getting dynamic movement
-    [SerializeField] private float x_drift = 1.1f;
-    [SerializeField] private float y_drift = 0.1f;
-    [SerializeField] private float ast_rotation = 0.1f;
+    [SerializeField] private float x_drift;
+    [SerializeField] private float y_drift;
+    [SerializeField] private float ast_rotation;
 
 
 
@@ -175,6 +175,11 @@ public class AsteroidSpawner : MonoBehaviour
 
     void InstantiateAsteroidObjects()
     {
+        // make sure instantiate the velocity related values here, before
+        // passing to the instantiation function
+        this.x_drift = 0.05f; this.y_drift = 0.05f; this.ast_rotation = 0.05f;
+
+        // Final operation to get all asteroids completed and spawned onto the screen
         asteroid1 = ast1.GetComponent<AsteroidObject>();
         if(asteroid1 != null)
         {
