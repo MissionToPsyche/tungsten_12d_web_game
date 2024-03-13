@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "tungsten_12d_web_game.sln",
+    "dotnet.defaultSolution": "Alloy-Explorer.sln",
     "git.ignoreLimitWarning": true
 }

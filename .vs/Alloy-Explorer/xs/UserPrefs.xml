@@ -6,14 +6,18 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoreGameScripts/AsteroidSpawner.cs">
     <Files>
-      <File FileName="Assets/CoreGameScripts/AsteroidSpawner.cs" Line="63" Column="154" />
+      <File FileName="Assets/CoreGameScripts/AsteroidSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/CoreGameScripts/MarsBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/CoreGameScripts/AsteroidObject.cs" Line="12" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Alloy-Explorer">
             <Node name="Assets" expanded="True">
-              <Node name="CoreGameScripts" expanded="True" />
+              <Node name="CoreGameScripts" expanded="True">
+                <Node name="AsteroidSpawner.cs" selected="True" />
+              </Node>
               <Node name="Scenes" expanded="True" />
               <Node name="Scripts" expanded="True" />
             </Node>

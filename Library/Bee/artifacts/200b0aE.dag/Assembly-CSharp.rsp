@@ -376,6 +376,7 @@
 "Assets/ContinueJourney.cs"
 "Assets/CoreGameScripts/AsteroidObject.cs"
 "Assets/CoreGameScripts/AsteroidSpawner.cs"
+"Assets/CoreGameScripts/CoreShipObject.cs"
 "Assets/CoreGameScripts/MarsBehavior.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/MainMenu.cs"
