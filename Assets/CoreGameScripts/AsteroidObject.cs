@@ -31,7 +31,9 @@ public class AsteroidObject : MonoBehaviour
         asteroid.velocity = new Vector2(xDrift, yDrift);
     }
 
-
+    public void ResetPosition(Vector2 new_position){
+        
+    }
 
     // Update is called once per
     // We want the asteroid objects to handle their own rotation and movement,

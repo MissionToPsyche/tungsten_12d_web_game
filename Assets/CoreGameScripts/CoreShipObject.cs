@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class CoreShipScript : MonoBehaviour
+public class CoreShipObject : MonoBehaviour
 {
 
     /*
@@ -12,6 +13,7 @@ public class CoreShipScript : MonoBehaviour
     public Transform planet;
     public Transform launchPosition;
     public Rigidbody2D ship;
+    private CoreGameController coreGameController;
     [SerializeField] public float orbitDistance;
     [SerializeField] public float orbitSpeed;
     [SerializeField] public float launchSpeed;
@@ -30,12 +32,18 @@ public class CoreShipScript : MonoBehaviour
 
         // intialize the ship
         ship = GetComponent<Rigidbody2D>();
+        coreGameController = FindObjectOfType<CoreGameController>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        // testing item for getting orbit to go back to normal
+        if(Input.GetKeyDown(KeyCode.L)){
+            launched = false;
+        }
         // continually check for keyboard input
         if(Input.GetKeyDown(KeyCode.Space)){
             launched = true;
@@ -48,15 +56,15 @@ public class CoreShipScript : MonoBehaviour
        }
     }
 
-    private void OrbitAroundPlanet(){
+    public void OrbitAroundPlanet(){
+        // Calculate circumference
         float orbitCircumference = orbitSpeed * Time.deltaTime;
         
         // adjust position of orbiting sprite around planet
         transform.RotateAround(planet.position, Vector3.forward, orbitCircumference);
     }
 
-
-    private void Launch(){
+    public void Launch(){
         
         // get current position of the ship
         // Vector3 currentShipPosition = transform.position;
@@ -64,5 +72,34 @@ public class CoreShipScript : MonoBehaviour
         // test
         Vector3 currentShipPosition = transform.up;
         ship.velocity = currentShipPosition * launchSpeed;
-    }    
+    }
+
+    void OnCollisionEnter2D(Collision2D collision){
+
+        // Flag the asteroid hitting one of the out of bounds walls
+        if(collision.gameObject.CompareTag("LeftBoundary") || collision.gameObject.CompareTag("RightBoundary") || 
+        collision.gameObject.CompareTag("TopBoundary") || collision.gameObject.CompareTag("BottomBoundary")){
+            
+            // let the core game controller invoke the out of bounds method
+            coreGameController.OnSpaceshipOutOfBounds();
+        }
+    }
+
+
+    public void ResetSpaceship(){
+        
+        // reset ship position
+        ship.position = new Vector2(0, 4);
+
+        // reset velocity to zero
+        ship.velocity = Vector2.zero;
+        ship.angularVelocity = 0;
+
+        // Reset rotation to initial orientation
+        transform.rotation = Quaternion.Euler(0, 0, -90);
+
+        
+        // make sure launched is put back to false
+        // launched = false;
+    }
 }

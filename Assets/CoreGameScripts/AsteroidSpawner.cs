@@ -101,13 +101,9 @@ public class AsteroidSpawner : MonoBehaviour
     */
     void Start()
     {
-
         RandomizeQuadrants();
         InstantiateAsteroidGameObjects();
         InstantiateAsteroidObjects();
-        
-
-        
     }
 
     // Update is called once per frame
@@ -287,5 +283,31 @@ public class AsteroidSpawner : MonoBehaviour
         {
             asteroid18.Initialize(quadrant18, x_drift, y_drift, ast_rotation);
         }
+    }
+
+    public void RespawnAsteroids(){
+        
+        // get new semi-random positions
+        RandomizeQuadrants();
+
+        // update the positions of all the asteroids
+        asteroid1.ResetPosition(quadrant1);
+        asteroid2.ResetPosition(quadrant2);
+        asteroid3.ResetPosition(quadrant3);
+        asteroid4.ResetPosition(quadrant4);
+        asteroid5.ResetPosition(quadrant5);
+        asteroid6.ResetPosition(quadrant6);
+        asteroid7.ResetPosition(quadrant7);
+        asteroid8.ResetPosition(quadrant8);
+        asteroid9.ResetPosition(quadrant9);
+        asteroid10.ResetPosition(quadrant10);
+        asteroid11.ResetPosition(quadrant11);
+        asteroid12.ResetPosition(quadrant12);
+        asteroid13.ResetPosition(quadrant13);
+        asteroid14.ResetPosition(quadrant14);
+        asteroid15.ResetPosition(quadrant15);
+        asteroid16.ResetPosition(quadrant16);
+        asteroid17.ResetPosition(quadrant17);
+        asteroid18.ResetPosition(quadrant18);
     }
 }
