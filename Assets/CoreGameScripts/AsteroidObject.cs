@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    Mainly a simple object class model to dictate asteroid behavior when 
+    used in other scripts. This functions more as a model not a controller
+
+*/
 public class AsteroidObject : MonoBehaviour
 {
     // Items related to position of the asteroids

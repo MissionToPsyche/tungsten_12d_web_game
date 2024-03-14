@@ -98,7 +98,8 @@ public class AsteroidSpawner : MonoBehaviour
          
     */
     void Start()
-    {
+    {   
+        // do Not edit these first 3 lines
         RandomizeQuadrants();
         InstantiateAsteroidGameObjects();
         InstantiateAsteroidObjects();
@@ -110,6 +111,12 @@ public class AsteroidSpawner : MonoBehaviour
         
     }
 
+
+    /*
+        Semi-randomization of each asteroids cordinate to be used when spawning/respawning the asteroids
+        The next three functions are vital for the start of the game scene and instantiating all of the items, 
+        do not modify these functions unless consulting Cole.
+    */
     void RandomizeQuadrants()
     {
         // --- Outter circle quadrant spawns (x,y) ---
@@ -143,7 +150,11 @@ public class AsteroidSpawner : MonoBehaviour
         quadrant18 = new Vector2(Random.Range(7 - spawn_offset, 7 + 1 + spawn_offset), Random.Range(-20 - spawn_offset, -20 + 1 + spawn_offset));
     }
 
+    /*
+        Instantiates all of the asteroids based on the updated randomized quadrants
 
+        RamdomizedQuadrants() must be called first or it will break
+    */
     void InstantiateAsteroidGameObjects()
     {
         ast1 = Instantiate(Meteor1Prefab, quadrant1, Quaternion.identity);
@@ -166,7 +177,7 @@ public class AsteroidSpawner : MonoBehaviour
         ast18 = Instantiate(Meteor1Prefab, quadrant18, Quaternion.identity);
     }
 
-
+    /**/
     void InstantiateAsteroidObjects()
     {
         // make sure instantiate the velocity related values here, before
@@ -319,6 +330,11 @@ public class AsteroidSpawner : MonoBehaviour
         }
     }
 
+
+    /*
+        Respawn function to be called when the game moves on to another event
+        ideally should be called by the asteroidspawner object in the coreGameController
+    */
     public void RespawnAsteroids(){
         
         // get new semi-random positions

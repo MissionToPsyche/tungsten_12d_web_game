@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    Another script that really just serves as an object class model, not function 
+    as a controller. That job is handled in other scripts
+
+    Ideally there shouldn't be hardly any changes to this script. 
+*/
 public class MarsBehavior : MonoBehaviour
 {
 

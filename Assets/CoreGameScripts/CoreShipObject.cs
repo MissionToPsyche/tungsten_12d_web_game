@@ -8,7 +8,7 @@ public class CoreShipObject : MonoBehaviour
 {
 
     /*
-        primary items for ship orbiting around planet
+        Local items to dictate spaceship functionality
     */
     public Transform planet;
     public Transform launchPosition;
@@ -25,7 +25,7 @@ public class CoreShipObject : MonoBehaviour
     void Start()
     {
         // Unity requires manual setting of values for some reason rather than an intitialization
-        // I think because it is in the class which typically reqiure inits
+        // I think because it is in a class which typically reqiure inits
         orbitDistance = 5.0f;
         orbitSpeed = -30.0f;
         launchSpeed = 2.0f;
@@ -41,11 +41,6 @@ public class CoreShipObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // testing item for getting orbit to go back to normal
-        if(Input.GetKeyDown(KeyCode.L)){
-            launched = false;
-        }
         // continually check for keyboard input
         if(Input.GetKeyDown(KeyCode.Space)){
             launched = true;
@@ -58,6 +53,12 @@ public class CoreShipObject : MonoBehaviour
        }
     }
 
+    /*
+        Movement function in initial round state when the spaceship is orbiting around the 
+        planet. 
+
+        !!! Do not modify this function without consulting Cole (dc message is fine) !!!
+    */
     public void OrbitAroundPlanet(){
         // Calculate circumference
         float orbitCircumference = orbitSpeed * Time.deltaTime;
@@ -66,12 +67,26 @@ public class CoreShipObject : MonoBehaviour
         transform.RotateAround(planet.position, Vector3.forward, orbitCircumference);
     }
 
+    /*
+        Function that launches the spacecraft away from the planet
+
+        !!! Do not modify this function without consulting Cole (dc message is fine) !!!
+    */
     public void Launch(){
         
         Vector3 currentShipPosition = transform.up;
         ship.velocity = currentShipPosition * launchSpeed;
     }
 
+
+    /*
+        Here are the event triggers for when the spaceship either goes out of bounds or hits and asteroid
+
+        OnCollisionenter2D is a unity specific function, (arguments included) therefore it is imperative
+        you !!! do not modify the name of the function, only the items inside the function !!!
+    
+    
+    */
     void OnCollisionEnter2D(Collision2D collision){
 
         // Flag the asteroid hitting one of the out of bounds walls
@@ -88,6 +103,16 @@ public class CoreShipObject : MonoBehaviour
     }
 
 
+
+
+    /*
+        The next three functions are responsible for resetting the spaceship back to the original
+        position and then starting up the orbit. It is super important not to modify the IEnumerator
+        
+        If you need to adjust the time for reposition, just change the orbitDelaySec variable and it will
+        make the game wait a little longer before starting the orbit movement again.
+    
+    */
     // Helper function to ResetSpaceship 
     // essential to have coroutine so orbit doesn't start before the reposition is complete
     IEnumerator RepositionComplete(){
@@ -109,7 +134,7 @@ public class CoreShipObject : MonoBehaviour
         // reset ship position
         ship.position = new Vector2(0, 4);
 
-        // reset velocity to zero
+        // reset velocity and rotation to zero
         ship.velocity = Vector2.zero;
         ship.angularVelocity = 0;
 
