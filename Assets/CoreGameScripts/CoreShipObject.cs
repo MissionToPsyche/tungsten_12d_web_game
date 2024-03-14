@@ -17,6 +17,7 @@ public class CoreShipObject : MonoBehaviour
     [SerializeField] public float orbitDistance;
     [SerializeField] public float orbitSpeed;
     [SerializeField] public float launchSpeed;
+    [SerializeField] public float orbitDelaySec; // may be useful for debuging later, or issues in test
     private bool launched;
 
 
@@ -28,6 +29,7 @@ public class CoreShipObject : MonoBehaviour
         orbitDistance = 5.0f;
         orbitSpeed = -30.0f;
         launchSpeed = 2.0f;
+        orbitDelaySec = 0.5f;
         launched = false;
 
         // intialize the ship
@@ -66,10 +68,6 @@ public class CoreShipObject : MonoBehaviour
 
     public void Launch(){
         
-        // get current position of the ship
-        // Vector3 currentShipPosition = transform.position;
-        
-        // test
         Vector3 currentShipPosition = transform.up;
         ship.velocity = currentShipPosition * launchSpeed;
     }
@@ -90,8 +88,24 @@ public class CoreShipObject : MonoBehaviour
     }
 
 
-    public void ResetSpaceship(){
+    // Helper function to ResetSpaceship 
+    // essential to have coroutine so orbit doesn't start before the reposition is complete
+    IEnumerator RepositionComplete(){
         
+        // wait 500 ms before setting orbit movement back to normal
+        yield return new WaitForSeconds(orbitDelaySec);
+
+        launched = false;
+    }
+
+    // may be needed later on incase user system has orbit problems and need to increase 
+    // delay before starting movement again - tie to a setting or report screen
+    public void IncreaseDelay(){
+        orbitDelaySec += 0.5f;
+    }
+
+    public void ResetSpaceship(){
+
         // reset ship position
         ship.position = new Vector2(0, 4);
 
@@ -102,8 +116,8 @@ public class CoreShipObject : MonoBehaviour
         // Reset rotation to initial orientation
         transform.rotation = Quaternion.Euler(0, 0, -90);
 
-        
-        // make sure launched is put back to false
-        // launched = false;
+        // make sure we wait a set time before starting orbit back up
+        // or else the orbit movement will be severly messed up
+        StartCoroutine(RepositionComplete());
     }
 }
