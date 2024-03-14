@@ -33,6 +33,12 @@ public class AsteroidObject : MonoBehaviour
 
     public void ResetPosition(Vector2 new_position){
         
+        // reset location of the asteroid
+        transform.position = new_position;
+
+        // reset asteroid drift velocity
+        asteroid.velocity = new Vector2(this.x_drift, this.y_drift);
+        
     }
 
     // Update is called once per

@@ -46,7 +46,8 @@ public class CoreGameController : MonoBehaviour
 
     // listener for when the spaceship hits and asteroid
     public void OnSpaceshipHitAsteroid(){
-
+        asteroidSpawner.RespawnAsteroids();
+        spaceship.ResetSpaceship();
     }
 
     // listener for when the sapceship goes out of bounds

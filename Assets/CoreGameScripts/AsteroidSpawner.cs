@@ -16,8 +16,6 @@ public class AsteroidSpawner : MonoBehaviour
         conditions, things that need to be randomized do need to be handled some
         way though
     */
-
-
     // Game objects
     public GameObject Meteor1Prefab;
     public GameObject Meteor2Prefab;
@@ -180,108 +178,144 @@ public class AsteroidSpawner : MonoBehaviour
         if(asteroid1 != null)
         {
             asteroid1.Initialize(quadrant1, x_drift, y_drift, ast_rotation);
+            asteroid1.tag = "Asteroid";
+            asteroid1.name = "Asteroid1";
         }
 
         asteroid2 = ast2.GetComponent<AsteroidObject>();
         if (asteroid2 != null)
         {
             asteroid2.Initialize(quadrant2, x_drift, y_drift, ast_rotation);
+            asteroid2.tag = "Asteroid";
+            asteroid2.name = "Asteroid2";
         }
 
         asteroid3 = ast3.GetComponent<AsteroidObject>();
         if (asteroid3 != null)
         {
             asteroid3.Initialize(quadrant3, x_drift, y_drift, ast_rotation);
+            asteroid3.tag = "Asteroid";
+            asteroid3.name = "Asteroid3";
         }
 
         asteroid4 = ast4.GetComponent<AsteroidObject>();
         if (asteroid4 != null)
         {
             asteroid4.Initialize(quadrant4, x_drift, y_drift, ast_rotation);
+            asteroid4.tag = "Asteroid";
+            asteroid4.name = "Asteroid4";
         }
 
         asteroid5 = ast5.GetComponent<AsteroidObject>();
         if (asteroid5 != null)
         {
             asteroid5.Initialize(quadrant5, x_drift, y_drift, ast_rotation);
+            asteroid5.tag = "Asteroid";
+            asteroid5.name = "Asteroid5";
         }
 
         asteroid6 = ast6.GetComponent<AsteroidObject>();
         if (asteroid6 != null)
         {
             asteroid6.Initialize(quadrant6, x_drift, y_drift, ast_rotation);
+            asteroid6.tag = "Asteroid";
+            asteroid6.name = "Asteroid6";
         }
 
         asteroid7 = ast7.GetComponent<AsteroidObject>();
         if (asteroid7 != null)
         {
             asteroid7.Initialize(quadrant7, x_drift, y_drift, ast_rotation);
+            asteroid7.tag = "Asteroid";
+            asteroid7.name = "Asteroid7";
         }
 
         asteroid8 = ast8.GetComponent<AsteroidObject>();
         if (asteroid8 != null)
         {
             asteroid8.Initialize(quadrant8, x_drift, y_drift, ast_rotation);
+            asteroid8.tag = "Asteroid";
+            asteroid8.name = "Asteroid8";
         }
 
         asteroid9 = ast9.GetComponent<AsteroidObject>();
         if (asteroid9 != null)
         {
             asteroid9.Initialize(quadrant9, x_drift, y_drift, ast_rotation);
+            asteroid9.tag = "Asteroid";
+            asteroid9.name = "Asteroid9";
         }
 
         asteroid10 = ast10.GetComponent<AsteroidObject>();
         if (asteroid10 != null)
         {
             asteroid10.Initialize(quadrant10, x_drift, y_drift, ast_rotation);
+            asteroid10.tag = "Asteroid";
+            asteroid10.name = "Asteroid10";
         }
 
         asteroid11 = ast11.GetComponent<AsteroidObject>();
         if (asteroid11 != null)
         {
             asteroid11.Initialize(quadrant11, x_drift, y_drift, ast_rotation);
+            asteroid11.tag = "Asteroid";
+            asteroid11.name = "Asteroid11";
         }
 
         asteroid12 = ast12.GetComponent<AsteroidObject>();
         if (asteroid12 != null)
         {
             asteroid12.Initialize(quadrant12, x_drift, y_drift, ast_rotation);
+            asteroid12.tag = "Asteroid";
+            asteroid12.name = "Asteroid12";
         }
 
         asteroid13 = ast13.GetComponent<AsteroidObject>();
         if (asteroid13 != null)
         {
             asteroid13.Initialize(quadrant13, x_drift, y_drift, ast_rotation);
+            asteroid13.tag = "Asteroid";
+            asteroid13.name = "Asteroid13";
         }
 
         asteroid14 = ast14.GetComponent<AsteroidObject>();
         if (asteroid14 != null)
         {
             asteroid14.Initialize(quadrant14, x_drift, y_drift, ast_rotation);
+            asteroid14.tag = "Asteroid";
+            asteroid14.name = "Asteroid14";
         }
 
         asteroid15 = ast15.GetComponent<AsteroidObject>();
         if (asteroid15 != null)
         {
             asteroid15.Initialize(quadrant15, x_drift, y_drift, ast_rotation);
+            asteroid15.tag = "Asteroid";
+            asteroid15.name = "Asteroid15";
         }
 
         asteroid16 = ast16.GetComponent<AsteroidObject>();
         if (asteroid16 != null)
         {
             asteroid16.Initialize(quadrant16, x_drift, y_drift, ast_rotation);
+            asteroid16.tag = "Asteroid";
+            asteroid16.name = "Asteroid16";
         }
 
         asteroid17 = ast17.GetComponent<AsteroidObject>();
         if (asteroid17 != null)
         {
             asteroid17.Initialize(quadrant17, x_drift, y_drift, ast_rotation);
+            asteroid17.tag = "Asteroid";
+            asteroid17.name = "Asteroid17";
         }
 
         asteroid18 = ast18.GetComponent<AsteroidObject>();
         if (asteroid18 != null)
         {
             asteroid18.Initialize(quadrant18, x_drift, y_drift, ast_rotation);
+            asteroid18.tag = "Asteroid";
+            asteroid18.name = "Asteroid18";
         }
     }
 

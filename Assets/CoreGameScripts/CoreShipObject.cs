@@ -83,6 +83,10 @@ public class CoreShipObject : MonoBehaviour
             // let the core game controller invoke the out of bounds method
             coreGameController.OnSpaceshipOutOfBounds();
         }
+
+        if(collision.gameObject.CompareTag("Asteroid")){
+            coreGameController.OnSpaceshipHitAsteroid();
+        }
     }
 
 
