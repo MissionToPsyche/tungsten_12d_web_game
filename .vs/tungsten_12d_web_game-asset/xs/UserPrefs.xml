@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{F3E706B0-6806-6EAC-84F0-905FFBD40B7E}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f04a531e-1692-452b-89fb-9faa8fcb8d99" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ContinueJourney.cs">
+    <Files>
+      <File FileName="Assets/again.cs" Line="11" Column="6" />
+      <File FileName="Assets/Circle.cs" Line="39" Column="68" />
+      <File FileName="Assets/ContinueJourney.cs" Line="10" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="tungsten_12d_web_game-asset" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

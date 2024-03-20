@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{3F2B13A0-527B-5B76-CE3F-96852B232DD7}|">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoreGameScripts/AsteroidSpawner.cs">
+    <Files>
+      <File FileName="Assets/CoreGameScripts/AsteroidSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/CoreGameScripts/MarsBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/CoreGameScripts/AsteroidObject.cs" Line="12" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Alloy-Explorer">
+            <Node name="Assets" expanded="True">
+              <Node name="CoreGameScripts" expanded="True">
+                <Node name="AsteroidSpawner.cs" selected="True" />
+              </Node>
+              <Node name="Scenes" expanded="True" />
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="05a8077c-3dce-4cb3-abf8-51a1d1a9129e" />
+</Properties>
