@@ -8,6 +8,8 @@ TagManager:
   - TopBoundary
   - LeftBoundary
   - RightBoundary
+  - Spaceship
+  - Asteroid
   layers:
   - Default
   - TransparentFX

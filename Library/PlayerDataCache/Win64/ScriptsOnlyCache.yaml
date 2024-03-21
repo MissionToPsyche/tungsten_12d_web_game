@@ -7,9 +7,11 @@ ScriptsOnlyBuild:
     - ContinueJourney
     - CoreGameController
     - CoreShipObject
+    - EnablePowerup
     - MainMenu
     - MarsBehavior
     - OpenWebsite
+    - PauseMenu
     - Scroller
     - VolumeSettings
     - again
@@ -156,6 +158,33 @@ ScriptsOnlyBuild:
     fullTypeName: VolumeSettings
     methodName: setMusicVolume
   - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Pause
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Unpause
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Endgame
+  - assembly: Assembly-CSharp
+    fullTypeName: EnablePowerup
+    methodName: DoTheThing
+  - assembly: Assembly-CSharp
+    fullTypeName: EnablePowerup
+    methodName: DoTheThing
+  - assembly: Assembly-CSharp
+    fullTypeName: EnablePowerup
+    methodName: DoTheThing
+  - assembly: Assembly-CSharp
+    fullTypeName: EnablePowerup
+    methodName: DoTheThing
+  - assembly: Assembly-CSharp
+    fullTypeName: EnablePowerup
+    methodName: DoTheThing
+  - assembly: Assembly-CSharp
     fullTypeName: ContinueJourney
     methodName: Continue
   - assembly: Assembly-CSharp
@@ -178,8 +207,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -191,13 +218,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 6774}
+      Script: {instanceID: 6776}
     - Class: 114
-      Script: {instanceID: 7394}
+      Script: {instanceID: 7396}
     - Class: 114
-      Script: {instanceID: 7630}
+      Script: {instanceID: 7632}
     - Class: 114
-      Script: {instanceID: 9486}
+      Script: {instanceID: 9488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -244,16 +271,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1632}
+    - Class: 114
+      Script: {instanceID: 2910}
+    - Class: 114
+      Script: {instanceID: 3174}
+    - Class: 114
+      Script: {instanceID: 3526}
+    - Class: 114
       Script: {instanceID: 3628}
     - Class: 114
       Script: {instanceID: 4772}
     - Class: 114
       Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 6548}
+      Script: {instanceID: 6070}
     - Class: 114
-      Script: {instanceID: 8482}
+      Script: {instanceID: 6550}
+    - Class: 114
+      Script: {instanceID: 6776}
+    - Class: 114
+      Script: {instanceID: 6990}
+    - Class: 114
+      Script: {instanceID: 7396}
+    - Class: 114
+      Script: {instanceID: 8484}
+    - Class: 114
+      Script: {instanceID: 29660}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -262,6 +309,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -297,13 +350,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 6068}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 6774}
+      Script: {instanceID: 6070}
     - Class: 114
-      Script: {instanceID: 6988}
+      Script: {instanceID: 6776}
     - Class: 114
-      Script: {instanceID: 7394}
+      Script: {instanceID: 6990}
+    - Class: 114
+      Script: {instanceID: 7396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -364,23 +419,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5132}
     - Class: 114
-      Script: {instanceID: 5804}
+      Script: {instanceID: 5806}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5976}
     - Class: 114
-      Script: {instanceID: 6068}
+      Script: {instanceID: 6070}
     - Class: 114
-      Script: {instanceID: 6660}
+      Script: {instanceID: 6662}
     - Class: 114
-      Script: {instanceID: 6682}
+      Script: {instanceID: 6684}
     - Class: 114
-      Script: {instanceID: 6774}
+      Script: {instanceID: 6776}
     - Class: 114
-      Script: {instanceID: 6988}
+      Script: {instanceID: 6990}
     - Class: 114
-      Script: {instanceID: 7394}
+      Script: {instanceID: 7396}
     - Class: 114
-      Script: {instanceID: 7630}
+      Script: {instanceID: 7632}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1010,6 +1065,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: ObjectSpin
+  - hash:
+      serializedVersion: 2
+      Hash: 7263ba8e508f34ec6588dd5bbaff08d6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnablePowerup
   - hash:
       serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
@@ -1676,6 +1737,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8278d3a5e0689ef6a4cf4e2490d42d3f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

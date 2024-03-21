@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnablePowerup : MonoBehaviour
 {
     public GameObject test;
-    
+
     public void DoTheThing()
     {
         //this makes the object in question appear visable
