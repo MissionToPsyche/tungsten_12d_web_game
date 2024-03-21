@@ -28,7 +28,7 @@ public class CoreShipObject : MonoBehaviour
         // I think because it is in a class which typically reqiure inits
         orbitDistance = 5.0f;
         orbitSpeed = -30.0f;
-        launchSpeed = 10.0f;
+        launchSpeed = 5.0f;
         orbitDelaySec = 0.5f;
         launched = false;
 

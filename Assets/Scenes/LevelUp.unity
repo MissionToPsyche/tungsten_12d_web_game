@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31, y: 9}
+  m_AnchoredPosition: {x: 31, y: 14}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &26904667
@@ -245,7 +245,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26904670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831996424}
+        m_TargetAssemblyTypeName: EnablePowerup, Assembly-CSharp
+        m_MethodName: DoTheThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &26904670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,12 +383,12 @@ GameObject:
   - component: {fileID: 357191573}
   - component: {fileID: 357191572}
   m_Layer: 5
-  m_Name: Level#2
+  m_Name: active2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &357191571
 RectTransform:
   m_ObjectHideFlags: 0
@@ -416,9 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -427,8 +437,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -576,7 +586,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 382121554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1078449458}
+        m_TargetAssemblyTypeName: EnablePowerup, Assembly-CSharp
+        m_MethodName: DoTheThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &382121554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +718,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 558637035}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 747732225}
+        m_TargetAssemblyTypeName: EnablePowerup, Assembly-CSharp
+        m_MethodName: DoTheThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &558637035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,6 +853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747732224}
+  - component: {fileID: 747732225}
   m_Layer: 5
   m_Name: Power-Up#4
   m_TagString: Untagged
@@ -848,6 +883,19 @@ RectTransform:
   m_AnchoredPosition: {x: -272, y: -132}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &747732225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747732223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622281d6e4de31b499b2bb0ddefce63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 968966041}
 --- !u!1 &804093930
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 804093931}
+  - component: {fileID: 804093932}
   m_Layer: 5
   m_Name: Power-Up#1
   m_TagString: Untagged
@@ -886,6 +935,19 @@ RectTransform:
   m_AnchoredPosition: {x: -272, y: 66}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &804093932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804093930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622281d6e4de31b499b2bb0ddefce63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 1746701220}
 --- !u!1 &831996422
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831996423}
+  - component: {fileID: 831996424}
   m_Layer: 5
   m_Name: Power-Up#3
   m_TagString: Untagged
@@ -915,8 +978,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1235122587}
-  - {fileID: 26904668}
   - {fileID: 1088978162}
+  - {fileID: 26904668}
   m_Father: {fileID: 2043524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -924,6 +987,19 @@ RectTransform:
   m_AnchoredPosition: {x: -272, y: -70}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &831996424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831996422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622281d6e4de31b499b2bb0ddefce63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 1088978161}
 --- !u!1 &842351560
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,7 +1028,7 @@ RectTransform:
   m_GameObject: {fileID: 842351560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.847503, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1378426895}
@@ -960,7 +1036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: 180}
+  m_AnchoredPosition: {x: 0, y: 180}
   m_SizeDelta: {x: 400, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842351562
@@ -1057,12 +1133,12 @@ GameObject:
   - component: {fileID: 968966044}
   - component: {fileID: 968966043}
   m_Layer: 5
-  m_Name: Level#4
+  m_Name: active4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &968966042
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1102,7 +1178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
+  m_text: 'X
 
 '
   m_isRightToLeft: 0
@@ -1113,8 +1189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1190,6 +1266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1078449457}
+  - component: {fileID: 1078449458}
   m_Layer: 5
   m_Name: Power-Up#2
   m_TagString: Untagged
@@ -1219,6 +1296,19 @@ RectTransform:
   m_AnchoredPosition: {x: -272, y: -5}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1078449458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078449456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622281d6e4de31b499b2bb0ddefce63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 357191570}
 --- !u!1 &1078747308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,12 +1389,12 @@ GameObject:
   - component: {fileID: 1088978164}
   - component: {fileID: 1088978163}
   m_Layer: 5
-  m_Name: Level#3
+  m_Name: active3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1088978162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1344,9 +1434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1355,8 +1443,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1998,7 +2086,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1263216719}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804093932}
+        m_TargetAssemblyTypeName: EnablePowerup, Assembly-CSharp
+        m_MethodName: DoTheThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1263216719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,7 +2218,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1309374946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1662115998}
+        m_TargetAssemblyTypeName: EnablePowerup, Assembly-CSharp
+        m_MethodName: DoTheThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1309374946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2550,6 +2662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1662115997}
+  - component: {fileID: 1662115998}
   m_Layer: 5
   m_Name: Power-Up#5
   m_TagString: Untagged
@@ -2570,8 +2683,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1881027149}
-  - {fileID: 1309374944}
   - {fileID: 1868491130}
+  - {fileID: 1309374944}
   m_Father: {fileID: 2043524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2579,6 +2692,19 @@ RectTransform:
   m_AnchoredPosition: {x: -272, y: -197}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1662115998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662115996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622281d6e4de31b499b2bb0ddefce63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 1868491129}
 --- !u!1 &1746701220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,12 +2717,12 @@ GameObject:
   - component: {fileID: 1746701223}
   - component: {fileID: 1746701222}
   m_Layer: 5
-  m_Name: Level#1
+  m_Name: active1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1746701221
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2636,9 +2762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2647,8 +2771,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2995,12 +3119,12 @@ GameObject:
   - component: {fileID: 1868491132}
   - component: {fileID: 1868491131}
   m_Layer: 5
-  m_Name: Level#5
+  m_Name: active5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1868491130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3040,9 +3164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3051,8 +3173,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

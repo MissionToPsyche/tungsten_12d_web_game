@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1933369345}
   SFXSource: {fileID: 2017012985}
-  background: {fileID: 8300000, guid: ce6a54083ea0b964f9a5837656dc4d88, type: 3}
+  background: {fileID: 8300000, guid: 0b1f61119895fb14b892fffe339e24ee, type: 3}
 --- !u!1 &868497394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,7 +3408,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1a3dacdb2bd514b44b1a4a2dd2881961, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b1f61119895fb14b892fffe339e24ee, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3833,7 +3833,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b1f61119895fb14b892fffe339e24ee, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

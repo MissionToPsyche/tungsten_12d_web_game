@@ -383,6 +383,7 @@
 "Assets/CoreGameScripts/CoreShipObject.cs"
 "Assets/CoreGameScripts/MarsBehavior.cs"
 "Assets/Scripts/AudioManager.cs"
+"Assets/Scripts/EnablePowerup.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Menu.cs"
 "Assets/Scripts/OpenWebsite.cs"
