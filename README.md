@@ -16,4 +16,8 @@ The development of a game where they begin their adventure in Mars’s orbit whe
 
 ## Frameworks, IDE, Programming languages, a library used in the project:
 
-## Known issues: Restarting the game via going back to the main menu disables HoverTips
+C#, Unity
+
+## Known issues:
+
+Restarting the game via going back to the main menu disables HoverTips
