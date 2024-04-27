@@ -13,3 +13,7 @@ Jace Kocsis, Harikrishna Kommineni, Cole Krause, Pei-En Pan, & Dylan A Wynne
 The development of a game where they begin their adventure in Mars’s orbit where players are tasked with piloting their spaceship to the surrounding asteroids. Once reaching an asteroid, the player will unlock research points that can later be used to unlock five upgrades including communications, propulsion, radar, rover, and materials. These upgrades enhance the ship's systems, enhancing the gameplay for the player. When a player unlocks an upgrade, they will also unlock a fun fact regarding either the respective system or general fact of the Psyche mission. Tying these two components together encourages the player to advance further in the game. 
 
 ## Screen Shots:
+
+## Frameworks, IDE, Programming languages, a library used in the project:
+
+## Known issues: Restarting the game via going back to the main menu disables HoverTips
